@@ -1,5 +1,5 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/go
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
 	"name": "devcontainer-cv-box",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
@@ -30,8 +30,8 @@
         "--cap-add=SYS_PTRACE",
         "--security-opt=seccomp:unconfined",
         "--env-file=${localWorkspaceFolder}/.devcontainer/.env",
-        "--expose=8000",
-        "--publish=8161:8000"
+        "--expose=5000",
+        "--publish=5161:5000"
     ],
 
 	// Configure tool-specific properties.
@@ -41,9 +41,7 @@
                 "github.copilot",
                 "mhutchie.git-graph",
                 "k--kato.intellij-idea-keybindings",
-                "ms-python.python",
-                "donjayamanne.python-extension-pack",
-                "ms-toolsai.jupyter"
+                "ms-python.python"
             ]
         }
     }
